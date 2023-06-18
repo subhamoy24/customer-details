@@ -1,0 +1,10 @@
+
+<div class="container pt-5">
+<% if @customer.errors.any? %>
+  <% @customer.errors.full_messages.each do |message|%>
+  <h3><%= message %> </h3>
+  <% end %>
+<% end %>
+
+<%= render 'form' %>
+</div>
